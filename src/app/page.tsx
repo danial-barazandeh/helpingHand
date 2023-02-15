@@ -1,90 +1,88 @@
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from './page.module.css'
+import Card from './card'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <div className='flex flex-col'>
+
+        <div className='bg-bgSoft h-[7vh] relative z-10 w-[100vw] flex flex-row items-center 
+                        px-[5vw] sm:px-[5vw] md:px-[7vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[10vw]
+                        gap-4'>
+
+          <div className=' bg-[url("/images/logo.jpg")] w-[4vh] h-[5vh] bg-contain bg-no-repeat'>
+          </div>
+          <ul className='text-sm'>
+            Helping Hand
+          </ul>
+
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
+        <div className='flex flex-row justify-center 2xl:gap-32 xl:gap-32 lg:gap-28 md:gap-28 sm:gap-20
+      px-[5vw] sm:px-[5vw] md:px-[7vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[10vw]'>
+
+
+
+          <div className='flex flex-row justify-center relative puppy-size'>
+            <div className='bg-accent bg-opacity-25 bg rounded-b-2xl rotate-[-24deg] absolute w-[250px] h-[350px]'>
+            </div>
+            <div className='bg-accent bg-polka-dots-pattern rounded-b-2xl  -rotate-12 w-[250px] h-[350px]'>
+              <div className='bg-puppy bg-contain bg-no-repeat bg-bottom rounded-b-2xl test rotate-12 ml-2 mt-[20px] w-[250px] h-[350px]'>
+              </div>
+            </div>
+          </div>
+
+          <div className='flex flex-col justify-center gap-4'>
+
+            <div className='flex flex-row items-center'>
+              <div className='h-1 w-4 bg-antiAcent mr-2'></div>
+              <ul className='text-antiAcent heading-size-first text-justify'>
+                Helping hand to our little friends
+              </ul>
+            </div>
+
+            <ul className='text-xl text-accentPlus30 heading-size-second text-justify'>
+              Helping hand to our little friends is a company that is engaged in the rescue of pets.
+            </ul>
+
+            <div className='rounded-xl bg-accent py-2 px-4 text-white w-28 text-center'>
+              Email us
+            </div>
+          </div>
+
+
         </div>
-      </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
+        <div className='px-[5vw] sm:px-[5vw] md:px-[7vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[10vw]
+        mt-0 sm:mt-0 md:mt-12 lg:mt-14 xl:mt-16 2xl:mt-20'>
+          <div className='bg-accent rounded-2xl w-full h-[20vh]'>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+            <div className='flex flex-col'>
+
+              <div className='px-8'>
+                <div className='text-white border-b-4 border-antiAcent py-4 w-[15vw]'>
+                  Why us ?
+                </div>
+              </div>
+
+              <div className='pt-12 flex flex-row justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-12'>
+
+                <Card title="Rescue" content="We provide free shelter and treatment to pets."></Card>
+                <Card title="Pet" content="We help animals find loving owners."></Card>
+                <Card title="Family" content="We help you to find yourself a smaller furry friend."></Card>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
       </div>
     </main>
   )
