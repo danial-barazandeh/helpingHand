@@ -14,11 +14,12 @@ module.exports = {
       accentPlus30: '#5c4288',
       antiAcent: '#FFBE59',
       bgSoft: '#F9F9FE',
-      bgHard: '#F4F2FF'
+      bgHard: '#F4F2FF',
     },
     backgroundImage: {
       'polka-dots-pattern': "url('/svg/polka-dots.svg')",
       'puppy': "url('/images/puppy-header.png')",
+      'p1': "url('/svg/topography.svg')",
     }
   },
   },
