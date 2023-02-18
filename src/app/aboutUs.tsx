@@ -33,7 +33,7 @@ export default function AboutUs() {
                     <div className='flex flex-row justify-end w-[100%] gap-2 sm:gap-3 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-12 absolute'>
                         <div className='text-justify w-full h-[40vh] text-xs text-white flex flex-col justify-center items-start'>
                             <p className='text-justify ml-16 items-center justify-center flex flex-row text-xs sm:text-xs md:text-lg'>
-                                Helping hand to our little friends is a company that is engaged in the rescue of pets. We provide free shelter and treatment to pets who have been abused or found themselves on the street.  We also help animals find loving owners. If you know animals that need help, or if you understand that you can no longer keep your animal, but you don't want to throw it out on the street, or if, on the contrary, you would like to find yourself a smaller furry friend, then in all these cases, come to us.
+                                Helping hand to our little friends is a company that is engaged in the rescue of pets. We provide free shelter and treatment to pets who have been abused or found themselves on the street.  We also help animals find loving owners. If you know animals that need help, or if you understand that you can no longer keep your animal, but you don`&apos;`t want to throw it out on the street, or if, on the contrary, you would like to find yourself a smaller furry friend, then in all these cases, come to us.
                             </p>
                         </div>
                         <div className='bg-blob w-80 h-80 bg-contain bg-no-repeat'>

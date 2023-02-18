@@ -32,10 +32,38 @@ export default function WhyUs() {
                         w-[150px] h-[150px]">
               </div>
 
-              <Card title="Rescue" content="We provide free shelter and treatment to pets."></Card>
-              <Card title="Pet" content="We help animals find loving owners."></Card>
-              <Card title="Family" content="We help you to find yourself a smaller furry friend."></Card>
+              <div className='bg-white rounded-2xl shadow-md flex flex-col justify-center
+                        w-[150px] h-[150px]'>
+                <ul className="
+            text-[0.8rem] sm:text-[0.9rem] md:text-[.9rem] lg:text-[.9rem] font-extrabold
+            text-antiAcent text-xs text-center h-1/3 flex flex-col justify-center">Rescue</ul>
 
+                <ul className="
+            text-[0.7rem] sm:text-[0.8rem] md:text-[0.8rem] lg:text-[.8rem]
+            text-center h-2/3 flex flex-col justify-start px-2">We provide free shelter and treatment to pets.</ul>
+              </div>
+
+              <div className='bg-white rounded-2xl shadow-md flex flex-col justify-center
+                        w-[150px] h-[150px]'>
+                <ul className="
+            text-[0.8rem] sm:text-[0.9rem] md:text-[.9rem] lg:text-[.9rem] font-extrabold
+            text-antiAcent text-xs text-center h-1/3 flex flex-col justify-center">Pet</ul>
+
+                <ul className="
+            text-[0.7rem] sm:text-[0.8rem] md:text-[0.8rem] lg:text-[.8rem]
+            text-center h-2/3 flex flex-col justify-start px-2">We help animals find loving owners.</ul>
+              </div>
+
+              <div className='bg-white rounded-2xl shadow-md flex flex-col justify-center
+                        w-[150px] h-[150px]'>
+                <ul className="
+            text-[0.8rem] sm:text-[0.9rem] md:text-[.9rem] lg:text-[.9rem] font-extrabold
+            text-antiAcent text-xs text-center h-1/3 flex flex-col justify-center">Pet</ul>
+
+                <ul className="
+            text-[0.7rem] sm:text-[0.8rem] md:text-[0.8rem] lg:text-[.8rem]
+            text-center h-2/3 flex flex-col justify-start px-2">We help you to find yourself a smaller furry friend.</ul>
+              </div>
 
             </div>
 

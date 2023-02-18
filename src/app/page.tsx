@@ -70,7 +70,7 @@ export default function Home() {
 
 
       <div id='whyUs'>
-        <WhyUs> </WhyUs>
+        <WhyUs></WhyUs>
       </div>
 
       <div className='h-[150px]'></div>
