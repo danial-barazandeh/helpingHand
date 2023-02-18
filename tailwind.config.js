@@ -20,6 +20,7 @@ module.exports = {
       'polka-dots-pattern': "url('/svg/polka-dots.svg')",
       'puppy': "url('/images/puppy-header.png')",
       'p1': "url('/svg/topography.svg')",
+      'blob': "url('/svg/blob.svg')",
     }
   },
   },

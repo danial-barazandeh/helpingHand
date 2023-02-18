@@ -1,4 +1,6 @@
 export default function WhyUs() {
+
+
     return (
         <div className='flex flex-row justify-center 2xl:gap-32 xl:gap-32 lg:gap-28 md:gap-28 sm:gap-20
       px-[5vw] sm:px-[5vw] md:px-[7vw] lg:px-[8vw] xl:px-[10vw] 2xl:px-[10vw]'>
@@ -27,9 +29,12 @@ export default function WhyUs() {
                     Helping hand to our little friends is a company that is engaged in the rescue of pets.
                 </ul>
 
-                <div className='rounded-xl bg-accent py-2 px-4 text-white w-28 text-center'>
-                    Email us
-                </div>
+                <a href="mailto:HHTOLF_Rescue@gmail.com">
+                    <div className='rounded-xl bg-accent py-2 px-4 text-white w-28 text-center'>
+                        Email us
+                    </div>
+                </a>
+
             </div>
 
 

@@ -6,7 +6,7 @@ import 'leaflet/dist/leaflet.css';
 import { iconPerson } from "./iconPerson";
 import L from 'leaflet';
 import pin from '../../public/images/Pin.svg'
-import { FaEnvelope, FaPhone, FaClock, FaCalendarWeek } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaClock, FaCalendarWeek, FaLocationArrow } from 'react-icons/fa';
 
 export default function ContactInfo() {
     const position = [49.84433049241948, -119.45613589393625]
@@ -62,6 +62,10 @@ export default function ContactInfo() {
                 <div className="flex items-center gap-4 text-accentPlus30">
                     <FaCalendarWeek></FaCalendarWeek>
                     <ul className="text-xs sm:text-xs md:text-sm lg:text-[1rem]"> Weekends: from 10 am to 4 pm.</ul>
+                </div>
+                <div className="flex items-center gap-4 text-accentPlus30">
+                    <FaLocationArrow></FaLocationArrow>
+                    <ul className="text-xs sm:text-xs md:text-sm lg:text-[1rem]"> Address: 3885 Casorso Rd, Kelowna, BC V1W 4R7.</ul>
                 </div>
             </div>
 

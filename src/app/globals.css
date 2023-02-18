@@ -11,6 +11,10 @@
     font-family: OpenSans;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
 body{
     margin: 0 !important; 
     padding: 0 !important;

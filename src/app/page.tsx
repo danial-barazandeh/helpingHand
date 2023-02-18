@@ -6,10 +6,16 @@ import WhyUs from './whyUs'
 import Heading from './Heading'
 import ContactInfo from './contactInfo'
 import Footer from './footer'
+import AboutUs from './aboutUs'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+
+
 export default function Home() {
+
   return (
     <main>
 
@@ -27,36 +33,53 @@ export default function Home() {
         </div>
 
 
+
+
         <div className='flex flex-row justify-end gap-8 w-[70vw] items-center'>
-          <div className='text-sm'>
-            Why Us
-          </div>
 
-          <div className='text-sm'>
-            Contact Info
-          </div>
+          <a href="#aboutUs">
+            <div className='text-sm'>
+              About Us
+            </div>
+          </a>
 
-          <div className='text-sm'>
-            Address
-          </div>
+          <a href="#whyUs">
+            <div className='text-sm'>
+              Why Us
+            </div>
+          </a>
+
+          <a href="#contactInfo">
+            <div className='text-sm'>
+              Contact Info
+            </div>
+          </a>
+
+
         </div>
 
 
 
       </div>
 
-      
+
 
       <Heading></Heading>
 
 
 
 
-      <WhyUs> </WhyUs>
+      <div id='whyUs'>
+        <WhyUs> </WhyUs>
+      </div>
 
       <div className='h-[150px]'></div>
 
-      <ContactInfo></ContactInfo>
+      <div id='contactInfo'>
+        <div id='address'>
+          <ContactInfo></ContactInfo>
+        </div>
+      </div>
 
 
 
@@ -64,6 +87,11 @@ export default function Home() {
 
       </div> */}
 
+      <div id='aboutUs'>
+        <AboutUs></AboutUs>
+      </div>
+
+      <div className='h-[150px]'></div>
       <Footer></Footer>
 
     </main>
